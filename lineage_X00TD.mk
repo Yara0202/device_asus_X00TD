@@ -24,10 +24,22 @@ PRODUCT_MANUFACTURER := asus
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
+TARGET_VENDOR := asus
+TARGET_VENDOR_PRODUCT_NAME := X00TD
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=ASUS_X00T \
-    PRODUCT_NAME=WW_X00T \
     PRIVATE_BUILD_DESC="walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys"
 
 # Build fingerprint
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
+
+# The following system and vendor props will be set by vendor init
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
+    ro.product.device \
+    ro.product.model \
+    ro.product.name
+
+PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
+    ro.vendor.product.device \
+    ro.vendor.product.model \
+    ro.vendor.product.name
