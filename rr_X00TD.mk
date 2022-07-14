@@ -34,3 +34,4 @@ BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/
 
 # ResurrectionRemix Stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
+RR_BUILDTYPE := Unofficial
