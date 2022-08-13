@@ -171,7 +171,6 @@ static const char *snet_prop_key[] = {
   "ro.boot.vbmeta.device_state",
   "ro.boot.verifiedbootstate",
   "ro.boot.flash.locked",
-  "ro.boot.selinux",
   "ro.boot.veritymode",
   "ro.boot.warranty_bit",
   "ro.warranty_bit",
@@ -179,7 +178,6 @@ static const char *snet_prop_key[] = {
   "ro.secure",
   "ro.build.type",
   "ro.build.tags",
-  "ro.build.selinux",
   NULL
 };
 
@@ -188,14 +186,12 @@ static const char *snet_prop_value[] = {
   "green",
   "1",
   "enforcing",
-  "enforcing",
   "0",
   "0",
   "0",
   "1",
   "user",
   "release-keys",
-  "1",
   NULL
 };
 
